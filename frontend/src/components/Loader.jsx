@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Zap } from 'lucide-react';
+import logo from "../assets/media-logo-removebg-preview.png"
 
 const Loader = () => {
   // Animation variants for the container
@@ -73,7 +73,7 @@ const Loader = () => {
           className="mb-6"
           variants={zapVariants}
         >
-          <Zap className="text-purple-500 h-12 w-12" />
+          <img src={logo} alt="" className='w-[100px] h-[100px]' />
         </motion.div>
         
         <motion.div 
