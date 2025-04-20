@@ -62,7 +62,7 @@ const ContactPage = () => {
       </section>
 
       {/* Contact Info and Form */}
-      <section className="py-20">
+      <section className="md:p-20 py-20 px-5">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Contact Info */}
@@ -84,7 +84,7 @@ const ContactPage = () => {
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold mb-1">Office Location</h3>
-                    <p className="text-zinc-400">123 Marketing St, Digital City, 10001</p>
+                    <p className="text-zinc-400">Pune,Maharashtra</p>
                   </div>
                 </div>
 
@@ -94,7 +94,7 @@ const ContactPage = () => {
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold mb-1">Email Us</h3>
-                    <p className="text-zinc-400">hello@magnetiqmedia.com</p>
+                    <p className="text-zinc-400">magnetiqmedia@gmail.com</p>
                     <p className="text-zinc-400">support@magnetiqmedia.com</p>
                   </div>
                 </div>
@@ -105,8 +105,8 @@ const ContactPage = () => {
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold mb-1">Call Us</h3>
-                    <p className="text-zinc-400">(555) 123-4567</p>
-                    <p className="text-zinc-400">(555) 987-6543</p>
+                    <p className="text-zinc-400">+91 99226 57543</p>
+                    <p className="text-zinc-400">+91 99226 57543</p>
                   </div>
                 </div>
               </motion.div>
@@ -261,7 +261,7 @@ const ContactPage = () => {
           <div className="relative w-full h-[400px] rounded-xl overflow-hidden">
             <iframe
               title="Our Office Location"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387191.33750346623!2d-73.97968099999999!3d40.697149399999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5dfce1ab7%3A0xf1b3d0c0584953c4!2sNew%20York%2C%20USA!5e0!3m2!1sen!2sin!4v1608285320425!5m2!1sen!2sin"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7558.798098948911!2d73.85666205!3d18.5204303!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c06c5a02aaf1%3A0xe41d5a8289f65096!2sPune%2C%20Maharashtra%2C%20India!5e0!3m2!1sen!2sin!4v1713602455048!5m2!1sen!2sin"
               width="100%"
               height="100%"
               style={{ border: 0 }}

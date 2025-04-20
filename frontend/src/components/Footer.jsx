@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import logo from "../assets/media-logo-removebg-preview.png"
 import { Facebook, Twitter, Instagram, Linkedin, Mail, Phone, MapPin, Zap } from 'lucide-react';
 
 const Footer = () => {
@@ -9,7 +10,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
             <div className="flex items-center gap-2 mb-6">
-              <Zap className="text-purple-500 h-6 w-6" />
+              <img src={logo} alt="" className='w-[50px] h-[50px] object-contain'/>
               <span className="font-bold text-xl">
                 Magnetiq <span className="text-purple-500">Media</span>
               </span>
@@ -24,7 +25,7 @@ const Footer = () => {
               <a href="#" className="text-zinc-400 hover:text-purple-500 transition-colors" aria-label="Twitter">
                 <Twitter size={20} />
               </a>
-              <a href="#" className="text-zinc-400 hover:text-purple-500 transition-colors" aria-label="Instagram">
+              <a href="https://www.instagram.com/magnetiq_media3?igsh=MXB6ZWVpZWtkMG82bw" className="text-zinc-400 hover:text-purple-500 transition-colors" aria-label="Instagram">
                 <Instagram size={20} />
               </a>
               <a href="#" className="text-zinc-400 hover:text-purple-500 transition-colors" aria-label="Linkedin">
@@ -80,15 +81,15 @@ const Footer = () => {
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
                 <MapPin className="text-purple-500 h-5 w-5 mt-1 flex-shrink-0" />
-                <span className="text-zinc-400">123 Marketing St, Digital City, 10001</span>
+                <span className="text-zinc-400">Pune, Maharashtra</span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="text-purple-500 h-5 w-5 flex-shrink-0" />
-                <span className="text-zinc-400">(555) 123-4567</span>
+                <span className="text-zinc-400">+91 99226 57543</span>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="text-purple-500 h-5 w-5 flex-shrink-0" />
-                <span className="text-zinc-400">hello@magnetiqmedia.com</span>
+                <span className="text-zinc-400">magnetiqmedia@gmail.com</span>
               </li>
             </ul>
           </div>

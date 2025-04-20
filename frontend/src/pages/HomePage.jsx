@@ -28,11 +28,11 @@ const HomePage = () => {
   };
 
   return (
-    <div className="overflow-hidden">
+    <div className="overflow-hidden ">
       <HeroCarousel />
 
       {/* Why Choose Us */}
-      <section className="py-20 bg-zinc-950">
+      <section className="md:p-20 py-20 px-5 bg-zinc-950">
         <div className="container mx-auto px-4">
           <motion.div 
             className="text-center mb-16"
@@ -85,7 +85,7 @@ const HomePage = () => {
       </section>
 
       {/* Services */}
-      <section className="py-20">
+      <section className="md:p-20 py-20 px-5">
         <div className="container mx-auto px-4">
           <motion.div 
             className="text-center mb-16"
@@ -127,7 +127,7 @@ const HomePage = () => {
       </section>
 
       {/* CTA */}
-      <section className="py-20 bg-gradient-to-r from-purple-900 via-purple-800 to-blue-900">
+      <section className="md:p-20 py-20 px-5 bg-gradient-to-r from-purple-900 via-purple-800 to-blue-900">
         <div className="container mx-auto px-4 text-center">
           <motion.div
             variants={containerVariants}
@@ -158,7 +158,7 @@ const HomePage = () => {
       </section>
 
       {/* Testimonials */}
-      <section className="py-20">
+      <section className="md:p-20 py-20 px-5">
         <div className="container mx-auto px-4">
           <motion.div 
             className="text-center mb-16"

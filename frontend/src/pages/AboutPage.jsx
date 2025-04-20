@@ -44,7 +44,7 @@ const AboutPage = () => {
       </section>
 
       {/* Our Story */}
-      <section className="py-20">
+      <section className="md:p-20 py-20 px-5">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <motion.div
@@ -70,7 +70,7 @@ const AboutPage = () => {
                 Our Story
               </motion.h2>
               <motion.p variants={itemVariants} className="text-zinc-400 mb-4">
-                Founded in 2018, Magnetiq Media was born out of a frustration with the status quo in digital marketing. We saw too many businesses being promised the world by agencies that delivered little more than flashy reports and vanity metrics.
+                Magnetiq Media was born out of a frustration with the status quo in digital marketing. We saw too many businesses being promised the world by agencies that delivered little more than flashy reports and vanity metrics.
               </motion.p>
               <motion.p variants={itemVariants} className="text-zinc-400 mb-4">
                 We set out to build a different kind of agency—one that measures success not by impressions or clicks, but by business growth and ROI. One that combines data-driven strategy with creative execution to deliver marketing that actually works.
@@ -101,7 +101,7 @@ const AboutPage = () => {
       </section>
 
       {/* Our Values */}
-      <section className="py-20 bg-zinc-950">
+      <section className="md:p-20 py-20 px-5 bg-zinc-950">
         <div className="container mx-auto px-4">
           <motion.div
             className="text-center mb-16"
@@ -156,7 +156,7 @@ const AboutPage = () => {
       </section>
 
       {/* Team */}
-      <section className="py-20">
+      {/* <section className="py-20">
         <div className="container mx-auto px-4">
           <motion.div
             className="text-center mb-16"
@@ -226,7 +226,7 @@ const AboutPage = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };

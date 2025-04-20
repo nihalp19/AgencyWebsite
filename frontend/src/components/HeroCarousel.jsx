@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { NavLink } from 'react-router-dom';
 
 const images = [
   {
@@ -99,8 +100,20 @@ const HeroCarousel = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.8, duration: 0.6 }}
               >
-                <button className="btn-primary">Get Started</button>
-                <button className="btn-secondary">Our Services</button>
+                 <NavLink
+                  to="/contact"
+                  className="btn-primary"
+                >
+                  Get Started
+                </NavLink> 
+                 <NavLink
+                  to="/services"
+                  className="btn-secondary"
+                >
+                 Our Services
+                </NavLink> 
+                {/* <button className="btn-primary">Get Started</button>
+                <button className="btn-secondary">Our Services</button> */}
               </motion.div>
             </div>
           </motion.div>

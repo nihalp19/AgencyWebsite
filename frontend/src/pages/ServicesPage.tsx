@@ -43,7 +43,7 @@ const ServicesPage = () => {
       </section>
 
       {/* Services List */}
-      <section className="py-20">
+      <section className="md:p-20 py-20 px-5">
         <div className="container mx-auto px-4">
           <div className="space-y-24">
             {services.map((service, index) => (
@@ -57,8 +57,8 @@ const ServicesPage = () => {
               >
                 <div className={`order-2 ${index % 2 === 1 ? 'lg:order-1' : 'lg:order-2'}`}>
                   <div className="bg-gradient-to-br from-purple-900 to-blue-900 rounded-xl p-12 flex items-center justify-center">
-                    <div className="text-white h-32 w-32">
-                      {service.icon}
+                    <div className="text-white ">
+                      <img src={service.image} alt=""  className=''/>
                     </div>
                   </div>
                 </div>
@@ -109,7 +109,7 @@ const ServicesPage = () => {
       </section>
 
       {/* Process */}
-      <section className="py-20 bg-zinc-950">
+      <section className="md:p-20 py-20 px-5 bg-zinc-950">
         <div className="container mx-auto px-4">
           <motion.div 
             className="text-center mb-16"
@@ -167,7 +167,7 @@ const ServicesPage = () => {
       </section>
 
       {/* FAQ */}
-      <section className="py-20">
+      <section className="md:p-20 py-20 px-5">
         <div className="container mx-auto px-4">
           <motion.div 
             className="text-center mb-16"
@@ -218,7 +218,7 @@ const ServicesPage = () => {
       </section>
 
       {/* CTA */}
-      <section className="py-20 bg-gradient-to-r from-purple-900 via-purple-800 to-blue-900">
+      <section className="md:p-20 py-20 px-5 bg-gradient-to-r from-purple-900 via-purple-800 to-blue-900">
         <div className="container mx-auto px-4 text-center">
           <motion.div
             variants={containerVariants}
