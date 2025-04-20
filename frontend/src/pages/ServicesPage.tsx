@@ -28,7 +28,7 @@ const ServicesPage = () => {
       {/* Hero */}
       <section className="pt-32 pb-20 bg-zinc-950">
         <div className="container mx-auto px-4">
-          <motion.div 
+          <motion.div
             className="max-w-3xl mx-auto text-center"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -47,7 +47,7 @@ const ServicesPage = () => {
         <div className="container mx-auto px-4">
           <div className="space-y-24">
             {services.map((service, index) => (
-              <motion.div 
+              <motion.div
                 key={service.id}
                 className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ${index % 2 === 1 ? 'lg:flex-row-reverse' : ''}`}
                 initial={{ opacity: 0 }}
@@ -58,11 +58,11 @@ const ServicesPage = () => {
                 <div className={`order-2 ${index % 2 === 1 ? 'lg:order-1' : 'lg:order-2'}`}>
                   <div className="bg-gradient-to-br from-purple-900 to-blue-900 rounded-xl p-12 flex items-center justify-center">
                     <div className="text-white ">
-                      <img src={service.image} alt=""  className=''/>
+                      <img src={service.image} alt="" className='' />
                     </div>
                   </div>
                 </div>
-                
+
                 <div className={`order-1 ${index % 2 === 1 ? 'lg:order-2' : 'lg:order-1'}`}>
                   <motion.div
                     variants={containerVariants}
@@ -79,12 +79,12 @@ const ServicesPage = () => {
                     <motion.p variants={itemVariants} className="text-zinc-400 text-lg mb-8">
                       {service.description}
                     </motion.p>
-                    
+
                     <motion.div variants={itemVariants}>
                       <h3 className="text-xl font-semibold mb-4">What's Included:</h3>
                       <ul className="space-y-3">
                         {service.features.map((feature, i) => (
-                          <motion.li 
+                          <motion.li
                             key={i}
                             className="flex items-start gap-3"
                             variants={itemVariants}
@@ -96,7 +96,7 @@ const ServicesPage = () => {
                         ))}
                       </ul>
                     </motion.div>
-                    
+
                     <motion.div variants={itemVariants} className="mt-8">
                       <button className="btn-primary">Learn More</button>
                     </motion.div>
@@ -111,7 +111,7 @@ const ServicesPage = () => {
       {/* Process */}
       <section className="md:p-20 py-20 px-5 bg-zinc-950">
         <div className="container mx-auto px-4">
-          <motion.div 
+          <motion.div
             className="text-center mb-16"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -126,28 +126,28 @@ const ServicesPage = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
             {[
-              { 
+              {
                 number: "01",
                 title: "Discovery",
                 description: "We learn about your business, goals, audience, and competition to develop a deep understanding of your needs."
               },
-              { 
+              {
                 number: "02",
                 title: "Strategy",
                 description: "We create a customized marketing plan tailored to your specific goals and target audience."
               },
-              { 
+              {
                 number: "03",
                 title: "Implementation",
                 description: "Our team executes the strategy with precision, constantly monitoring performance."
               },
-              { 
+              {
                 number: "04",
                 title: "Optimization",
                 description: "We analyze results and refine our approach to continuously improve performance and ROI."
               }
             ].map((step, index) => (
-              <motion.div 
+              <motion.div
                 key={index}
                 className="card relative"
                 initial={{ opacity: 0, y: 50 }}
@@ -169,7 +169,7 @@ const ServicesPage = () => {
       {/* FAQ */}
       <section className="md:p-20 py-20 px-5">
         <div className="container mx-auto px-4">
-          <motion.div 
+          <motion.div
             className="text-center mb-16"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -201,7 +201,7 @@ const ServicesPage = () => {
                 answer: "We focus on measurable results and business impact rather than vanity metrics. We value transparency, communication, and true partnership with our clients. Our team brings specialized expertise across all digital marketing channels with a data-driven approach."
               }
             ].map((faq, index) => (
-              <motion.div 
+              <motion.div
                 key={index}
                 className="card"
                 initial={{ opacity: 0, y: 20 }}
@@ -227,13 +227,13 @@ const ServicesPage = () => {
             viewport={{ once: true }}
             className="max-w-3xl mx-auto"
           >
-            <motion.h2 
+            <motion.h2
               variants={itemVariants}
               className="text-white mb-6"
             >
               Ready to Transform Your Marketing?
             </motion.h2>
-            <motion.p 
+            <motion.p
               variants={itemVariants}
               className="text-white/80 text-lg mb-8"
             >

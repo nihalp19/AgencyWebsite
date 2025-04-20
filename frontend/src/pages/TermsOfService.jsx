@@ -94,10 +94,10 @@ const TermsOfService = () => {
       content: `If you have any questions about these Terms of Service, please contact us at:
       
       Magnetiq Media
-      123 Marketing Street
-      Digital City, DC 12345
-      Email: legal@magnetiqmedia.com
-      Phone: (555) 123-4567`
+      Kothrud
+      Pune Maharashtra
+      Email: Magnetiqmedia3@gmail.com
+      Phone: +91 99226 57543`
     }
   ];
 
@@ -105,7 +105,7 @@ const TermsOfService = () => {
     <div className="pt-24 pb-20 bg-zinc-900">
       <div className="container mx-auto px-4">
         {/* Header */}
-        <motion.div 
+        <motion.div
           className="text-center mb-16"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -113,7 +113,7 @@ const TermsOfService = () => {
         >
           <h1 className="text-3xl md:text-5xl font-bold mb-4">Terms of <span className="text-purple-500">Service</span></h1>
           <p className="text-zinc-400 max-w-3xl mx-auto">
-            Last Updated: June 1, 2025
+            Last Updated: April 19, 2025
           </p>
         </motion.div>
 
@@ -125,7 +125,7 @@ const TermsOfService = () => {
           animate="visible"
         >
           {sections.map((section, index) => (
-            <motion.div 
+            <motion.div
               key={index}
               className="mb-12"
               variants={itemVariants}

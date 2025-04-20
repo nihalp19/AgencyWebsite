@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Mail, Phone, MapPin, Send, CheckCircle } from 'lucide-react';
+import emailjs from '@emailjs/browser'
 
 const ContactPage = () => {
   const [formSubmitted, setFormSubmitted] = useState(false);
@@ -17,11 +18,39 @@ const ContactPage = () => {
     setFormData(prev => ({ ...prev, [name]: value }));
   };
 
+
+
+
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(formData);
+
+
+
+    emailjs.send(import.meta.env.VITE_SERVICE_ID, import.meta.env.VITE_TEMPLATE_ID, {
+      name: formData.name,
+      email: formData.email,
+      phone: formData.phone,
+      service: formData.service,
+      message: formData.message,
+      date: new Date().toLocaleDateString(),
+      time: new Date().toLocaleTimeString()
+    }, import.meta.env.VITE_PUBLIC_KEY)
+      .then((response) => {
+        console.log('SUCCESS!', response.status, response.text);
+      }, (error) => {
+        console.log('FAILED...', error);
+      });
     setFormSubmitted(true);
+    setFormData({
+      name: '',
+      email: '',
+      phone: '',
+      service: '',
+      message: ''
+    })
   };
+
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -47,7 +76,7 @@ const ContactPage = () => {
       {/* Hero Section */}
       <section className="pt-32 pb-20 bg-zinc-950">
         <div className="container mx-auto px-4">
-          <motion.div 
+          <motion.div
             className="max-w-3xl mx-auto text-center"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -143,7 +172,7 @@ const ContactPage = () => {
                   <p className="text-zinc-400 mb-6">
                     Your message has been sent successfully. We'll get back to you shortly.
                   </p>
-                  <button 
+                  <button
                     onClick={() => setFormSubmitted(false)}
                     className="btn-secondary"
                   >
@@ -241,8 +270,8 @@ const ContactPage = () => {
                       ></textarea>
                     </div>
 
-                    <button 
-                      type="submit" 
+                    <button
+                      type="submit"
                       className="btn-primary w-full flex items-center justify-center gap-2"
                     >
                       Send Message <Send className="h-4 w-4" />

@@ -1,4 +1,5 @@
 import React from 'react';
+import { useState,useEffect } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 import HomePage from './pages/HomePage';
@@ -6,8 +7,9 @@ import AboutPage from './pages/AboutPage';
 import ServicesPage from './pages/ServicesPage';
 import ContactPage from './pages/ContactPage';
 import Layout from './components/Layout';
-import { useState,useEffect } from 'react';
 import Loader from './components/Loader';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import TermsOfService from './pages/TermsOfService';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -34,7 +36,8 @@ function App() {
                 <Route index element={<HomePage />} />
                 <Route path="/about" element={<AboutPage />} />
                 <Route path="/services" element={<ServicesPage />} />
-                <Route path="/contact" element={<ContactPage />} />
+                <Route path="/privacy" element={<PrivacyPolicy />} />
+                <Route path="/terms" element={<TermsOfService />} />
               </Route>
             </Routes>
           </AnimatePresence>
