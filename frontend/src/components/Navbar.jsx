@@ -48,7 +48,7 @@ const Navbar = () => {
   ];
 
   return (
-    <header className={`fixed w-full top-0 z-50 transition-all duration-300 ${scrolled ? 'bg-zinc-900/95 py-3 shadow-lg' : 'bg-transparent py-2'}`}>
+    <header className={`fixed w-full top-0 z-50 transition-all duration-300 ${scrolled ? 'bg-zinc-900/95 py-4 shadow-lg' : 'bg-transparent py-'}`}>
       <div className="container mx-auto px-4 flex justify-between items-center">
         <NavLink to="/" className="flex items-center gap-2 z-50">
           <img src={logo} alt="logo" className='h-[65px] w-[65px] object-contain' />
