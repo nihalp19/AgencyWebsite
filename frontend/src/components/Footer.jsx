@@ -64,8 +64,8 @@ const Footer = () => {
                 { name: 'About Us', path: '/about' },
                 { name: 'Services', path: '/services' },
                 { name: 'Contact Us', path: '/contact' },
-                { name: 'Privacy Policy', path: '#' },
-                { name: 'Terms of Service', path: '#' }
+                { name: 'Privacy Policy', path: '/privacy' },
+                { name: 'Terms of Service', path: '/terms' }
               ].map((link) => (
                 <li key={link.name}>
                   <Link to={link.path} className="text-zinc-400 hover:text-purple-500 transition-colors">
