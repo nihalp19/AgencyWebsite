@@ -134,8 +134,8 @@ const ContactPage = () => {
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold mb-1">Call Us</h3>
-                    <p className="text-zinc-400">+91 99226 57543</p>
-                    <p className="text-zinc-400">+91 99226 57543</p>
+                    <p className="text-zinc-400">+91 92262 52748</p>
+                    <p className="text-zinc-400">+91 92262 52748</p>
                   </div>
                 </div>
               </motion.div>

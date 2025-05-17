@@ -108,7 +108,7 @@ const PrivacyPolicy = () => {
       Kothrud
       Pune Maharashtra
       Email: Magnetiqmedia3@gmail.com
-      Phone: +91 99226 57543`
+      Phone: +91 9226252748`
     }
   ];
 
